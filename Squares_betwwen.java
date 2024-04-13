@@ -5,10 +5,10 @@ import java.util.*;
  {
  Scanner sc=new Scanner(System.in);
  int s;
- System.out.print(" ENTER START RANGE ");
+ System.out.print(" ENTER START POINT ");
  s=sc.nextInt();
  int e;
- System.out.print(" ENTER END RANGE ");
+ System.out.print(" ENTER END POINT ");
  e=sc.nextInt();
  int i=0,n=1;
  while(i<e)
