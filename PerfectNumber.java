@@ -1,28 +1,19 @@
-import java.util.*;  
-class PerfectNumber
-{   
-static long isPerfect(long num)  
-{        
-long sum=0;    
-for(int i=1; i <= num/2; i++)  
-{  
-if(num % i == 0)  
-{    
-sum=sum + i;  
-}   
-}   
-return sum;   
-}  
-public static void main(String args[])    
-{  
-long number, s;  
-Scanner sc=new Scanner(System.in);         
-System.out.print("Enter the number: ");  
-number=sc.nextLong();    
-s = isPerfect(number);    
-if(s==number)  
-System.out.println(number+" is a perfect number");  
-else  
-System.out.println(number+" is not a perfect number");   
-}   
-}  
+import java.util.*;
+class PerfectNumber{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+     int ans=0,n,i;
+    n=sc.nextInt();
+   for( i=1;i<n;i++){
+  if(n%i==0){
+  ans=ans+i; 
+}
+}
+if(n==ans){
+  System.out.println("it is a perfect number");
+  }
+else{
+System.out.println("not a perfect number");
+  }
+}
+}
